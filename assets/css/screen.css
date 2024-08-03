@@ -20,6 +20,7 @@ production stylesheet in assets/built/screen.css
 10.  Site Footer
 11. Dark Mode
 12. Lightbox
+13. Bunca cta button
 
 */
 
@@ -3038,6 +3039,18 @@ html.dark-mode .footer-cta-title {
 
 .pswp--minimal--dark .pswp__top-bar {
     background: none;
+}
+
+/* 12. Bunca cta button
+/* ---------------------------------------------------------- */
+.bunca-cta-btn {
+    height: 3.5em !important;
+    width: 25em !important;
+}
+
+.bunca-cta-btn span {
+    text-align: center;
+    width: 100%;
 }
 
 /*
