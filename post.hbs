@@ -86,7 +86,19 @@ into the {body} tag of the default.hbs template --}}
         {{content}}
         {{!-- CTA Button --}}
         <div class="kg-card kg-button-card kg-align-center">
-            <a href="https://bunca-ai.com/?utm_source=blog" class="kg-btn kg-btn-accent bunca-cta-btn" id="bunca-cta-btn">
+            <a
+                href="https://bunca-ai.com/?utm_source=blog&utm_medium=cta&utm_campaign={{slug}}"
+                class="kg-btn kg-btn-accent bunca-cta-btn"
+                id="bunca-cta-btn"
+                data-event-name="cta_clicked"
+                data-cta-id="blog_visit_bunca"
+                data-page="blog"
+                data-position="post_end_cta"
+                data-label="立即前往 Bunca"
+                data-article-title="{{title}}"
+                data-article-path="{{url absolute="false"}}"
+                data-article-category="{{#primary_tag}}{{slug}}{{/primary_tag}}"
+            >
                 <span>立即前往 Bunca</span>
             </a>
         </div>
